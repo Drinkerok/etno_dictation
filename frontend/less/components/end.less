@@ -1,0 +1,91 @@
+.end {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
+  @media (min-width: @tablet) {
+    width: 580px;
+  }
+  @media (min-width: @desktop) {
+    width: 820px;
+  }
+}
+
+
+
+.end__header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 40px 0 30px;
+  color: @accent-color;
+
+  @media (min-width: @tablet) {
+    font-size: 3rem;
+  }
+  @media (min-width: @desktop) {
+    font-size: 3rem;
+    margin: 90px 0 30px;
+  }
+}
+
+
+
+.end__score {
+  text-align: center;
+  font-size: 1.4rem;
+
+
+  @media (min-width: @tablet) {
+    font-size: 2rem;
+  }
+}
+
+
+
+.end__certificate-wrapper {
+  padding: 30px 0;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 90px 0;
+  }
+}
+
+.end__certificate {
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: center;
+  background-color: @main-color;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 15px;
+
+  &:active {
+    background-color: @accent-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+
+  @media (min-width: @tablet) {
+    width: 350px;
+    margin: 60px auto 0;
+    padding: 30px 0;
+    font-size: 2rem;
+  }
+}

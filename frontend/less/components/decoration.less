@@ -1,0 +1,26 @@
+.decoration {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  z-index: -1;
+  width: 1100px;
+  height: 1100px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc5OSIgaGVpZ2h0PSIxNzk5IiB2aWV3Qm94PSIwIDAgMTc5OSAxNzk5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0wIDg5OS4wMUw4OTkuMDEgMEwxNzk4LjAyIDg5OS4wMUw4OTkuMDEgMTc5OC4wMkwwIDg5OS4wMVoiIGZpbGw9IiMwMzkxOEMiIGZpbGwtb3BhY2l0eT0iMC4xMyIvPjxwYXRoIGQ9Ik0yMjkgODk2LjE3OEw4OTYuMzQ2IDIyOC44MzJMMTU2OS4zNiA5MDEuODQxTDkwMi4wMSAxNTY5LjE5TDIyOSA4OTYuMTc4WiIgZmlsbD0iIzAzOTE4QyIgZmlsbC1vcGFjaXR5PSIwLjEzIi8+PC9zdmc+);
+  background-repeat: no-repeat;
+  background-size: 1100px 1100px;
+  background-position: center center;
+
+
+  .welcome &,
+  .end & {
+    transform: translate(-50%, -50%);
+  }
+
+
+  @media (min-width: @desktop) {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  }
+}

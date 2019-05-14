@@ -1,0 +1,87 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .welcome & {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+.logo__link {
+  display: block;
+  margin: 0 10px 0 0;
+
+  .end & {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0 15px 0 0;
+  }
+}
+
+
+
+.logo__img {
+  display: block;
+  width: 56px;
+  height: auto;
+
+  .welcome &,
+  .end & {
+    margin: 0 auto;
+    width: 64px;
+  }
+
+
+  @media (min-width: @tablet) {
+    .welcome &,
+    .end & {
+      width: 113px;
+    }
+  }
+  @media (min-width: @desktop) {
+    width: 92px;
+
+    .welcome &,
+    .end & {
+      width: 150px;
+    }
+  }
+}
+
+
+
+.logo__text {
+  color: @accent-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: none;
+
+  .welcome & {
+    font-size: 2.8rem;
+    margin: 30px 20px;
+    display: block;
+  }
+
+
+  @media (min-width: @tablet) {
+    font-size: 1.4rem;
+    display: block;
+
+    .welcome & {
+      margin: 40px 0 30px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 1.8rem;
+  }
+}

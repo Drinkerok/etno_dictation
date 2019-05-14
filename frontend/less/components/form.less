@@ -1,0 +1,172 @@
+.form {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+
+
+.form__header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+
+
+
+.form__form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+
+  @media (min-width: @desktop) {
+    width: 820px;
+    padding: 0;
+  }
+}
+
+
+
+.form__description {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 1.2rem;
+
+
+  @media (min-width: @tablet) {
+    font-size: 1.8rem;
+    margin: 0 0 40px;
+  }
+}
+
+
+
+.form__item {
+  margin: 0 0 20px;
+
+  &--agreement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &--error {
+    margin: 0 0 10px;
+
+    &:after {
+      content: attr(data-error);
+      font-size: 1.2rem;
+      line-height: 2.8rem;
+      color: @error-color;
+    }
+  }
+
+}
+
+
+
+.form__label {
+  .form__checkbox + & {
+    padding-left: 20px;
+  }
+}
+
+
+
+.form__label a {
+  text-decoration: underline;
+  color: @accent-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #89c2c0;
+  line-height: 48px;
+  font-size: 1.2rem;
+
+  &:hover,
+  &:focus {
+    border-color: @main-color;
+    outline: none;
+  }
+
+  .form__item--error & {
+    border-color: @error-color;
+  }
+
+
+  @media (min-width: @tablet) {
+    height: 60px;
+    line-height: 58px;
+    font-size: inherit;
+  }
+
+  @media (min-width: @desktop) {
+    height: 80px;
+    line-height: 78px;
+    padding: 0 30px;
+  }
+}
+
+
+
+.form__submit-wrapper {
+  padding: 0;
+
+
+  @media (min-width: @tablet) {
+    padding: 10px 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 40px 0;
+  }
+}
+
+
+
+.form__submit {
+  width: 100%;
+  margin: 20px auto 40px;
+  display: block;
+  line-height: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: @main-color;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #e5e2e9;
+    cursor: not-allowed;
+  }
+
+  &:active {
+    background-color: @accent-color;
+  }
+
+
+  @media (min-width: @tablet) {
+    width: 320px;
+    margin: 20px auto 0;
+  }
+}

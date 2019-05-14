@@ -1,0 +1,157 @@
+.test__content {
+  padding: 20px 10px;
+  background-color: rgba(229, 229, 229, 0.62);
+}
+
+
+
+.test__question {
+  margin: 0;
+
+
+  @media (min-width: @tablet) {
+    margin: 15px 60px 0
+  }
+
+  @media (min-width: @desktop) {
+    margin: 35px 90px 0;
+  }
+}
+
+
+
+.test__end {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: @main-color;
+  border: 2px solid @main-color;
+  padding: 0;
+  cursor: pointer;
+  align-self: center;
+  flex-shrink: 0;
+  font-size: 0;
+  width: 50px;
+  height: 46px;
+
+  &:hover {
+    background-color: @main-color;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: @accent-color;
+    color: #fff;
+  }
+
+
+  @media (min-width: @tablet) {
+    font-size: 1rem;
+    padding: 15px 5px;
+    width: auto;
+    height: auto;
+  }
+  @media (min-width: @desktop) {
+    padding: 31px 33px;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+.test__end-icon {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+
+
+.test__controls {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+
+  @media (min-width: @tablet) {
+    padding: 40px 90px;
+  }
+}
+
+
+
+.test__control {
+  background-color: transparent;
+  border: 2px solid #89c2c0;
+  color: #89c2c0;
+  width: 130px;
+  height: 60px;
+  padding: 0 0 0 50px;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+
+  &--next {
+    padding: 0 50px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: @main-color;
+    border-color: @main-color;
+    outline: none;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: @main-color;
+  }
+
+
+  @media (min-width: @tablet) {
+    width: 190px;
+    font-size: inherit;
+    padding: 0 0 0 70px;
+
+    &--next {
+      padding: 0 70px 0 0;
+    }
+  }
+  @media (min-width: @desktop) {
+    width: 220px;
+  }
+}
+
+
+
+.test__control-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+
+
+  .test__control--next & {
+    left: auto;
+    right: 20px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+
+  @media (min-width: @tablet) {
+    width: 16px;
+    height: 16px;
+    left: 30px;
+
+    .test__control--next & {
+      right: 30px;
+    }
+  }
+}
